@@ -9,12 +9,12 @@ pipeline {
     stage('Checkout') {
       steps {
         git branch: 'main', 
-        url: 'https://github.com/yomojomoro/source-maven-java-spring-hello-webapp.git'
+        url: 'https://github.com/yomojomoro/source-maven-java-spring-hello-webapp'
       }
     }
     stage('Build') {
       steps {
-        sh 'mvn clean package'
+        sh 'mvn clean package -DskipTests=true'
       }
     }
     stage('Test') {
