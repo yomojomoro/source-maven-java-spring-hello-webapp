@@ -68,7 +68,7 @@ spec:
         githubRepo = 'jenkins-k8s-argo' //jenkins-kube-deploy
         githubURL = "https://github.com/${githubId}/${githubRepo}.git"
         dockerhubId = 'yomojomoro' //c1t1d0s7
-        dockerhubRepo = 'myhello' //hello-world
+        dockerhubRepo = 'kaniko' //hello-world
       }
       steps {
         container('git') {
