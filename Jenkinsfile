@@ -2,7 +2,7 @@ pipeline {
   agent {
     label "jenkins-node"
   } 
-  triggers {
+  triggers { githubPush()
     pollSCM('* * * * *')
   }
 
